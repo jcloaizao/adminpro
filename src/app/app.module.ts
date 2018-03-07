@@ -10,13 +10,17 @@ import { PagesModule } from './pages/pages.module';
 // temporal
 import { FormsModule } from '@angular/forms';
 
-// Services
+// Servicios
 import { ServiceModule } from './services/service.module';
+
+
+
 
 // Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+
 
 
 @NgModule({
@@ -32,6 +36,7 @@ import { RegisterComponent } from './login/register.component';
     FormsModule,
     ServiceModule
   ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

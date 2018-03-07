@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { SettingService } from './services/services.index';
+
+import { SettingsService } from './services/service.index';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +8,8 @@ import { SettingService } from './services/services.index';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
 
-
-  constructor( public _settingService: SettingService) {
-
-
-  }
-
-
+  constructor( public _ajustes: SettingsService ) {}
 
 }
+
